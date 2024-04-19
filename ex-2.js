@@ -375,4 +375,10 @@ const bills = [
 
 // Start coding here
 
-const newBills;
+function getNewBills(bills){
+  let newBills = bills.filter((bill) => bill.member)
+  return newBills
+}
+
+let result = getNewBills(bills)
+console.log(result)

@@ -1,5 +1,6 @@
-function isPalindrome(string) {
+function isPalindrome(word) {
   // Start coding here
+  return word.trim() === word.trim().split("").reverse().join("")
 }
 
 //Example case
